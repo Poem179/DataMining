@@ -100,7 +100,7 @@ def predict_Attrition_Flag(
 
     x = pd.DataFrame(new_sample)
 
-    with open('web_app/log_reg_CreditCardCustomers.pkl', 'rb') as f:
+    with open('Credit_Card_Customers/web_app/log_reg_CreditCardCustomers.pkl', 'rb') as f:
         __log_reg = pickle.load(f)
 
     predict = str(__log_reg.predict(x)[0])
