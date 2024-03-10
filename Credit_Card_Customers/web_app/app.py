@@ -14,11 +14,11 @@ col1, col2 = st.columns(2)
 
 with col1:
 
-    Customer_Age = st.slider('Customer_Age:', value=45, min_value=1, max_value=100)
+    Customer_Age = st.slider('Customer_Age:', value=45, min_value=1, max_value=120)
 
     Gender = st.radio('Gender:', options=['M (Male)','F (Female)'])
 
-    Dependent_count = st.slider('Dependent_count:', value=3, min_value=0, max_value=7)
+    Dependent_count = st.number_input('Dependent_count:', value=3, min_value=0, max_value=20)
 
     Education_Level = st.selectbox('Education_Level:', index=0, options=['High School', 'Graduate', 'Uneducated', 'College', 'Post-Graduate', 'Doctorate', 'Unknown'])
 
